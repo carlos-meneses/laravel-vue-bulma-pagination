@@ -1,13 +1,13 @@
-[![Build Status](https://travis-ci.org/gilbitron/laravel-vue-pagination.svg?branch=master)](https://travis-ci.org/gilbitron/laravel-vue-pagination) [![npm](https://img.shields.io/npm/v/laravel-vue-pagination.svg)](https://www.npmjs.com/package/laravel-vue-pagination) [![Downloads](https://img.shields.io/npm/dt/laravel-vue-pagination.svg)](https://www.npmjs.com/package/laravel-vue-pagination)
+[![Build Status](https://travis-ci.org/georgie817/laravel-vue-bulma-pagination.svg?branch=master)](https://travis-ci.org/georgie817/laravel-vue-bulma-pagination) [![npm](https://img.shields.io/npm/v/laravel-vue-pagination.svg)](https://www.npmjs.com/package/laravel-vue-bulma-pagination) [![Downloads](https://img.shields.io/npm/dt/laravel-vue-pagination.svg)](https://www.npmjs.com/package/laravel-vue-bulma-pagination)
 
-# Laravel Vue Pagination
+# Laravel Vue Bulma Pagination
 A Vue.js pagination component for Laravel paginators that works with Bulma.
 
 ## Requirements
 
 * [Vue.js](https://vuejs.org/) 2.x
 * [Laravel](http://laravel.com/docs/) 5.x
-* [Bulma](http://bulma.io/) 3/4
+* [Bulma](http://bulma.io/) 0.7.x
 
 ## Install
 
