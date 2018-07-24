@@ -2,8 +2,8 @@
   "name": "laravel-vue-pagination",
   "version": "1.2.0",
   "description": "Vue.js pagination component for Laravel paginators and Bootstrap styles",
-  "author": "Gilbert Pellegrom <gilbert@pellegrom.me>",
-  "homepage": "https://github.com/gilbitron/laravel-vue-pagination",
+  "author": "George Raphael <georgie817@gmail.com>",
+  "homepage": "https://github.com/georgie817/laravel-vue-bulma-pagination",
   "license": "MIT",
   "keywords": [
     "vue",
@@ -14,9 +14,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/gilbitron/laravel-vue-pagination.git"
+    "url": "https://github.com/georgie817/laravel-vue-bulma-pagination"
   },
-  "main": "src/laravel-vue-pagination.js",
+  "main": "src/laravel-vue-bulma-pagination.js",
   "scripts": {
     "test": "jest"
   },

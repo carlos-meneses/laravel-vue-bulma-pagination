@@ -1,20 +1,20 @@
 [![Build Status](https://travis-ci.org/gilbitron/laravel-vue-pagination.svg?branch=master)](https://travis-ci.org/gilbitron/laravel-vue-pagination) [![npm](https://img.shields.io/npm/v/laravel-vue-pagination.svg)](https://www.npmjs.com/package/laravel-vue-pagination) [![Downloads](https://img.shields.io/npm/dt/laravel-vue-pagination.svg)](https://www.npmjs.com/package/laravel-vue-pagination)
 
 # Laravel Vue Pagination
-A Vue.js pagination component for Laravel paginators that works with Bootstrap.
+A Vue.js pagination component for Laravel paginators that works with Bulma.
 
 ## Requirements
 
 * [Vue.js](https://vuejs.org/) 2.x
 * [Laravel](http://laravel.com/docs/) 5.x
-* [Bootstrap](http://getbootstrap.com/) 3/4
+* [Bulma](http://bulma.io/) 3/4
 
 ## Install
 
 ```bash
-npm install laravel-vue-pagination
+npm install laravel-vue-bulma-pagination
 // or
-yarn add laravel-vue-pagination
+yarn add laravel-vue-bulma-pagination
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ yarn add laravel-vue-pagination
 Register the component:
 
 ```javascript
-Vue.component('pagination', require('laravel-vue-pagination'));
+Vue.component('pagination', require('laravel-vue-bulma-pagination'));
 ```
 
 Use the component:
@@ -80,7 +80,7 @@ Prev/Next buttons can be customized using the `prev-nav` and `next-nav` slots:
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `data` | Object | An object containing the structure of a [Laravel paginator](https://laravel.com/docs/5.4/pagination) response. See below for default value. |
+| `data` | Object | An object containing the structure of a [Laravel paginator](https://laravel.com/docs/5.6/pagination) response. See below for default value. |
 | `limit` | Number | (optional) Limit of pages to be rendered. Default `0` (unlimited pages) `-1` will hide numeric pages and leave only arrow navigation. Any positive integer (e.g. `2`) will define how many pages should be shown on either side of the current page when only a range of pages are shown (see below for example output). |
 
 **Default `data`**
@@ -101,7 +101,8 @@ Prev/Next buttons can be customized using the `prev-nav` and `next-nav` slots:
 
 **Example `limit`**
 
-![screen shot 2018-01-12 at 4 47 50 pm](https://user-images.githubusercontent.com/203882/34885624-8001513e-f7b8-11e7-9922-236e2b07caa0.png)
+![pagination](https://user-images.githubusercontent.com/11408141/43124047-a1970d44-8f2e-11e8-97df-cb49bba0b5a6.PNG)
+
 
 ### Events
 
@@ -111,4 +112,4 @@ Prev/Next buttons can be customized using the `prev-nav` and `next-nav` slots:
 
 ## Credits
 
-Laravel Vue Pagination was created by [Gilbert Pellegrom](https://gilbitron.me) from [Dev7studios](https://dev7studios.co). Released under the MIT license.
+Laravel Vue Bulma Pagination was created by [Gilbert Pellegrom](https://gilbitron.me) from [Dev7studios](https://dev7studios.co) as Laravel Vue Pagination with support for Bootstrap. And Forked by [George Raphael](https://georgeraphael.com) to provide support for Bulma. Released under the MIT license.

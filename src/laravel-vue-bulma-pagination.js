@@ -22,27 +22,25 @@ module.exports = {
 		}
 	},
 
-	template: '<ul class="pagination" v-if="data.total > data.per_page">\
-		<li class="page-item pagination-prev-nav" v-if="data.prev_page_url">\
-			<a class="page-link" href="#" aria-label="Previous" @click.prevent="selectPage(--data.current_page)">\
+	template: '<div class="pagination-wrapper m-t-20"><nav class="pagination is-centered" v-if="data.total > data.per_page">\
+			<a class="pagination-previous"  v-if="data.prev_page_url" href="#" aria-label="Previous" @click.prevent="selectPage(--data.current_page)">\
 				<slot name="prev-nav">\
 					<span aria-hidden="true">&laquo;</span>\
 					<span class="sr-only">Previous</span>\
 				</slot>\
 			</a>\
-		</li>\
-		<li class="page-item pagination-page-nav" v-for="n in getPages()" :class="{ \'active\': n == data.current_page }">\
-			<a class="page-link" href="#" @click.prevent="selectPage(n)">{{ n }}</a>\
-		</li>\
-		<li class="page-item pagination-next-nav" v-if="data.next_page_url">\
-			<a class="page-link" href="#" aria-label="Next" @click.prevent="selectPage(++data.current_page)">\
+			<ul class="pagination-list">\
+				<li>\
+					<a class="pagination-link" v-for="n in getPages()" :aria-current="{ \'page\': n == data.current_page }" :class="{ \'is-current\': n == data.current_page }" href="#" @click.prevent="selectPage(n)">{{ n }}</a>\
+				</li>\
+			</ul>\
+			<a v-if="data.next_page_url" class="pagination-next" href="#" aria-label="Next" @click.prevent="selectPage(++data.current_page)" rel="next">\
 				<slot name="next-nav">\
 					<span aria-hidden="true">&raquo;</span>\
 					<span class="sr-only">Next</span>\
 				</slot>\
 			</a>\
-		</li>\
-	</ul>',
+	</nav></div>',
 
 	methods: {
 		selectPage: function(page) {
