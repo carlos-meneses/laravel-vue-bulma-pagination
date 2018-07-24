@@ -1,6 +1,6 @@
 {
-  "name": "laravel-vue-pagination",
-  "version": "1.2.0",
+  "name": "laravel-vue-bulma-paginator",
+  "version": "1.0.0",
   "description": "Vue.js pagination component for Laravel paginators and Bootstrap styles",
   "author": "George Raphael <georgie817@gmail.com>",
   "homepage": "https://github.com/georgie817/laravel-vue-bulma-pagination",
@@ -8,7 +8,7 @@
   "keywords": [
     "vue",
     "component",
-    "bootstrap",
+    "bulma",
     "laravel",
     "pagination"
   ],

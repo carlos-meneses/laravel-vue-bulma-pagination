@@ -12,9 +12,9 @@ A Vue.js pagination component for Laravel paginators that works with Bulma.
 ## Install
 
 ```bash
-npm install laravel-vue-bulma-pagination
+npm install laravel-vue-bulma-paginator
 // or
-yarn add laravel-vue-bulma-pagination
+yarn add laravel-vue-bulma-paginator
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ yarn add laravel-vue-bulma-pagination
 Register the component:
 
 ```javascript
-Vue.component('pagination', require('laravel-vue-bulma-pagination'));
+Vue.component('pagination', require('laravel-vue-bulma-paginator'));
 ```
 
 Use the component:
